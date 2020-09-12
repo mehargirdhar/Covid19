@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="newsletter.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Mehar Covid Informational</title>
+</head>
+
+<body>
+    <!-- <header> -->
+    <div class="navbar">
+        <ul type="none">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="updates.html">UPDATES</a></li>
+            <li><a href="symptoms.html">SYMPTOMS</a></li>
+            <li><a href="hospital.html">HOSPITALS</a></li>
+            <li><a href="precautions.html">PRECAUTIONS</a></li>
+            <li><a href="https://www.pmcares.gov.in/en/" target="_blank">DONATE</a></li>
+        </ul>
+    </div>
+
+    <div class="body">
+        <div class="heading">Newsletter Registration Form</div>
+        <form onsubmit="checkForm()" id="form1" class="form">
+            <table>
+                <tr>
+                    <td>First Name</td>
+                    <td><input type="text" name="fname"></td>
+                </tr>
+                <tr>
+                    <td>Last Name</td>
+                    <td><input type="text" name="lname"></td>
+                </tr>
+                <tr>
+                    <td>Gender</td>
+                    <td>
+                        <select>
+                            <option value="m">Male</option>
+                            <option value="f">Female</option>
+                            <option value="o">Other</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>E-mail </td>
+                    <td><input type="text" name="mail"></td>
+                </tr>
+                <tr>
+                    <td>City </td>
+                    <td><input type="text" list="datalist" onkeyup="ac(this.value)">
+
+                        <datalist id="datalist">
+
+                            <option value="Delhi"></option>
+                            <option value="Allahabad"></option>
+                            <option value="Lucknow"></option>
+                            <option value="Kolkata"></option>
+                            <option value="Vellore"></option>
+                            <option value="Mumbai"></option>
+                            <option value="Chennai"></option>
+                            <option value="Bengaluru"></option>
+                            <option value="Surat"></option>
+                            <option value="Ahmedabad"></option>
+                            <option value="Patna"></option>
+                            <option value="Hyderabad"></option>
+                            <option value="Chandigarh"></option>
+
+
+                        </datalist></td>
+
+                </tr>
+                <tr>
+                    <td>State</td>
+                    <td><input type="text" name="state"></td>
+                </tr>
+                <tr>
+                    <td>Language Preference</td>
+                    <td>
+                        <select>
+                            <option value="e">English</option>
+                            <option value="h">Hindi</option>
+                            <option value="t">Tamil</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+        </form>
+        <div class="submit"><input type="submit" name="submit" class="btn"></div>
+    </div>
+    <script src="9.js"></script>
+
+    </div>
